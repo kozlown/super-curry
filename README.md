@@ -3,24 +3,27 @@ Optimized utility to currify any function.
 
 ## Examples
 
+See it in action [here](https://repl.it/@kozlown/super-curry)
+
 ```js
 import curry from 'super-curry'
 
-const add = curry(
-  (a, b, c) => a + b + c
+const linear = curry(
+  (a, x, b) => a * x + b
 )
 
 // it can be called normally
-console.info(add(2, 6, 3))
-// 11
+console.info(linear(2, 6, 3))
+// 2 * 6 + 3 = 15
 
 // with simple partial application
-const add4 = add(4)
-console.info(add4(5, 2))
-// 11
+const linearBy4 = linear(4)
+console.info(linearBy4(5, 2))
+// 4 * 5 + 2 = 22
 
 // or with placeholder(s)
-const add6 = add(4, curry, 2)
-console.info(add6(5))
-// 11
+const linearBy4Plus2 = linear(4, curry, 2)
+// linearBy4(curry, 2) works too
+console.info(linearBy4Plus2(6))
+// 4 * 6 + 2 = 26
 ```
