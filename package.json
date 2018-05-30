@@ -3,7 +3,11 @@
   "version": "1.0.1",
   "description": "Simple and optimized utility to currify any function",
   "keywords": [
-    "super", "curry", "optimized", "fast", "es6"
+    "super",
+    "curry",
+    "optimized",
+    "fast",
+    "es6"
   ],
   "main": "index.js",
   "repository": "git@github.com:kozlown/super-curry.git",
