@@ -1,6 +1,6 @@
 {
   "name": "super-curry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and optimized utility to currify any function",
   "keywords": [
     "super", "curry", "optimized", "fast", "es6"
